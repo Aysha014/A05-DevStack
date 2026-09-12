@@ -1,9 +1,11 @@
-import Nav from "./components/nav";
+import Navbar from "./components/nav";
+import Banner from "./components/banner";
 
 function App() {
   return (
     <>
-      <Nav />
+      <Navbar />
+      <Banner />
     </>
   );
 }
