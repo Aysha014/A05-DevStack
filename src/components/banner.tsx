@@ -2,11 +2,10 @@ import BannerImage from "../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <section>
-      <div className="container mx-auto flex flex-col items-center px-4 py-12 md:flex-row md:justify-between md:py-24">
-
-        {/* Banner Text */}
-        <div className="text-center md:w-1/2 md:text-left">
+    <section className="bg-white">
+      <div className="mx-auto flex max-w-7xl flex-col items-center px-5 py-10 md:flex-row md:justify-between md:px-8 md:py-14">
+        {/* Left content */}
+        <div className="w-full text-center md:w-1/2 md:text-left">
           <h1 className="text-4xl font-bold leading-tight text-[#0F172A] md:text-5xl">
             Build Your Ideal
             <br />
@@ -15,33 +14,31 @@ const Banner = () => {
             </span>
           </h1>
 
-          <p className="mx-auto mt-6 max-w-520 text-base leading-7 text-[#64748B] md:mx-0">
+          <p className="mx-auto mt-5 max-w-[540 text-sm leading-6 text-[#64748B] md:mx-0 md:text-base">
             Explore frontend, backend, database, and tooling options, compare
             them side by side, and put together the stack that fits your next
             project.
           </p>
 
-          {/* Buttons */}
-          <div className="mt-8 flex justify-center gap-4 md:justify-start">
+          <div className="mt-7 flex justify-center gap-3 md:justify-start">
             <button className="rounded-lg bg-linear-to-r from-[#FF6B1A] to-[#F72585] px-5 py-3 text-sm font-medium text-white transition hover:opacity-90">
               Explore Technologies
             </button>
 
-            <button className="rounded-lg border border-[#E2E8F0] px-8 py-3 text-sm text-[#475569] transition hover:bg-gray-50">
+            <button className="rounded-lg border border-[#E2E8F0] px-7 py-3 text-sm text-[#475569] transition hover:bg-gray-50">
               Learn More
             </button>
           </div>
         </div>
 
-        {/* Banner Image */}
-        <div className="mt-12 flex w-full justify-center md:mt-0 md:w-1/2 md:justify-end">
+        {/* Right image */}
+        <div className="mt-10 flex w-full justify-center md:mt-0 md:w-1/2 md:justify-end">
           <img
             src={BannerImage}
             alt="Development Stack"
-            className="w-[320px] object-contain md:w-400 lg:w-450"
+            className="w-300 object-contain sm:w-360 md:w-400 lg:w-430"
           />
         </div>
-
       </div>
     </section>
   );
