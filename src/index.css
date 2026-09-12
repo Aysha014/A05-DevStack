@@ -1,0 +1,3 @@
+@import "tailwindcss";
+/* css-linter-disable-next-line unknownAtRules */
+@plugin "daisyui";
