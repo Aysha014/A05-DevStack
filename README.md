@@ -32,6 +32,8 @@ Example:
 ```tsx
 <h1>Hello React</h1>
 
+```
+
 2. What is the difference between props and state?
 
 Props are values passed from a parent component to a child component.
@@ -46,8 +48,10 @@ I used it to store the technologies, selected stack items, loading state, and mo
 
 Example:
 
+```tsx
 const [stack, setStack] = useState<Technology[]>([]);
 
+```
 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
 useEffect runs code when a component loads or when certain values change.
@@ -56,6 +60,7 @@ I used it to fetch the technology data from data.json when the Technologies comp
 
 Example:
 
+```tsx
 useEffect(() => {
   fetch("/data.json")
     .then((res) => res.json())
@@ -65,6 +70,7 @@ useEffect(() => {
     });
 }, []);
 
+```
 5. Why does every item in a .map() list need a unique key prop?
 
 React needs a unique key so it can identify each item in a list.
@@ -73,12 +79,14 @@ This helps React update, add, or remove items efficiently.
 
 Example:
 
+```tsx
 {technologies.map((technology) => (
   <div key={technology.id}>
     {technology.name}
   </div>
 ))}
 
+```
 6. What is conditional rendering? Show one place you used it.
 
 Conditional rendering means showing different content depending on a condition.
@@ -87,10 +95,12 @@ I used it in the Your Stack section. If no technology is selected, the applicati
 
 Example:
 
+```tsx
 {stack.length === 0 && (
   <p>Your stack is empty.</p>
 )}
 
+```
 7. How do you pass data from a parent component to a child component, and how does the child send something back to the parent?
 
 Data is passed from a parent to a child using props.
@@ -101,13 +111,17 @@ In this project, the Technologies component passes the stack and remove function
 
 Example:
 
+```tsx
 <SelectedItems
   stack={stack}
   handleRemove={handleRemove}
   handleRemoveAll={handleRemoveAll}
 />
 
+```
 The child uses the function like this:
+
+```tsx
 <button onClick={() => handleRemove(item.id)}>
   Remove
 </button>
