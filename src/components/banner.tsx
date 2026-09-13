@@ -11,7 +11,7 @@ const Banner = () => {
             Build Your Ideal
             <br />
 
-            <span className="bg-linear-to-r from-[#FF5A1F] via-[#F72585] to-[#9333EA] bg-clip-text text-transparent">
+            <span className="brand-gradient-text">
               Development Stack
             </span>
           </h1>
@@ -23,13 +23,17 @@ const Banner = () => {
           </p>
 
           <div className="mt-7 flex justify-center gap-3 md:justify-start">
-            <button className="rounded-lg bg-linear-to-r from-[#FF6B1A] to-[#F72585] px-5 py-3 text-sm font-medium text-white transition hover:opacity-90">
+
+            {/* Primary Button */}
+            <button className="brand-gradient-bg rounded-lg px-5 py-3 text-sm font-medium text-white transition hover:opacity-90">
               Explore Technologies
             </button>
 
+            {/* Secondary Button */}
             <button className="rounded-lg border border-[#E2E8F0] px-7 py-3 text-sm text-[#475569] transition hover:bg-gray-50">
               Learn More
             </button>
+
           </div>
         </div>
 
