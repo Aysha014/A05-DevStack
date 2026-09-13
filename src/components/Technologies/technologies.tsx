@@ -90,7 +90,7 @@ const Technologies = () => {
   };
 
   return (
-    <section className="bg-white py-10">
+    <section className="bg-white pb-10 pt-4">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         {/* Heading */}
         <div className="mb-8 text-center md:text-left">
