@@ -34,13 +34,13 @@ Example:
 
 ```
 
-2. What is the difference between props and state?
+## 2. What is the difference between props and state?
 
 Props are values passed from a parent component to a child component.
 
 State is data stored inside a component that can change while the application is running.
 
-3. What does the useState hook do, and where did you use it in this project?
+## 3. What does the useState hook do, and where did you use it in this project?
 
 useState is used to store and update data inside a React component.
 
@@ -52,7 +52,7 @@ Example:
 const [stack, setStack] = useState<Technology[]>([]);
 
 ```
-4. What does the useEffect hook do, and why did you need it to load the JSON data?
+## 4. What does the useEffect hook do, and why did you need it to load the JSON data?
 
 useEffect runs code when a component loads or when certain values change.
 
@@ -71,7 +71,7 @@ useEffect(() => {
 }, []);
 
 ```
-5. Why does every item in a .map() list need a unique key prop?
+## 5. Why does every item in a .map() list need a unique key prop?
 
 React needs a unique key so it can identify each item in a list.
 
@@ -87,7 +87,7 @@ Example:
 ))}
 
 ```
-6. What is conditional rendering? Show one place you used it.
+## 6. What is conditional rendering? Show one place you used it.
 
 Conditional rendering means showing different content depending on a condition.
 
@@ -101,7 +101,7 @@ Example:
 )}
 
 ```
-7. How do you pass data from a parent component to a child component, and how does the child send something back to the parent?
+## 7. How do you pass data from a parent component to a child component, and how does the child send something back to the parent?
 
 Data is passed from a parent to a child using props.
 
