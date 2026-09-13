@@ -17,6 +17,7 @@ Dev Stack is a responsive React application that helps users explore different w
 2. Add technologies to a personal "Your Stack" section and remove them when needed.
 3. Responsive design for desktop, tablet, and mobile with toast notifications and loading state.
 
+---
 
 # React Questions
 
